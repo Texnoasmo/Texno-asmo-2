@@ -3,7 +3,9 @@ const {
     signUser,
     verifyUser
 } = require("../../lib/jwt")
-
+console.log(signUser({
+    "is_admin": "true"
+}))
 const multer = require('multer');
 const path = require('path');
 
